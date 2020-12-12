@@ -1,0 +1,28 @@
+from abc import abstractmethod, ABC
+
+class Figura(ABC):
+    def __init__(self,nombre):
+        self.nombre = nombre
+
+    @abstractmethod
+    def area(self):
+        pass
+    def perimetro(self):
+        pass
+
+class Rectangulo(Figura):
+    def __init__(self,nombre,base,altura):
+        super().__init__(nombre)
+        self.base = base
+        self.altura = altura
+
+    def area(self):
+        return self.base*self.altura
+
+    def perimetro(self):
+        return 2*(self.base+self.altura)
+    
+    rect = Rectangulo("Rectangulo 1",3.0,4.0)
+    cuad = Rectangulo("Cuadrado Unitario",1.0,1.0)
+
+    print("El rectangulo"+rect.nombre+"tiene area de"+str(rect.area)+"y perimetro de"+str(rect.perimetro))
