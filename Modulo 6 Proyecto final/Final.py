@@ -78,6 +78,17 @@ def leerMoneda(nombreMoneda):
         La moneda no cuenta con informacion en el monedero
         ''')
     
+def leerMonedas(nombreMoneda):
+    archivo = open("monedas/"+"%s.txt" % nombreMoneda, "rt")
+    cantidad = int(archivo.read())
+    monedaArchivo = diccionario_monedas.get(nombreMoneda)
+    cantidad = cantidad * monedaArchivo[1]
+    print("")
+    print("La moneda",monedaArchivo[0],"tiene un balance a hoy",date.today().strftime("%B %d, %Y"),"de:",cantidad)
+    print("Cotizacion en USD:",monedaArchivo[1])
+    print("")
+    archivo.close()
+    return cantidad
 
 
 def escribirMoneda(nombreMoneda, cantidadMoneda):
@@ -194,25 +205,19 @@ while opcion != 6:
         monedaIngresada = solicitaMoneda()
         leerMoneda(monedaIngresada)
 
- 
-
     #Seccion para consultar balance
     elif opcion == 4:
-        #leerBalance()
-        for filename in os.listdir("monedas/"):
-            print(os.path.splitext(filename)[0])
-            #ya saque todos los file name
-            #falta iterar files para sacar cantidad, multiplicar por caotizacion
-            #guardar en variable total
-            #imprimir variable
 
+        acumulado = 0
+        for filename in os.listdir("monedas/"):
+            nombreFile = str(os.path.splitext(filename)[0])
+            acumulado += leerMonedas(nombreFile)
+        
+        print("Su acumulado en USD a la fecha es de:",acumulado)
 
     #Seccion para consultar transacciones
     elif opcion == 5:
         leerTransacciones()
-        
-
-
 
     #salida del menu
     pass
