@@ -1,0 +1,2 @@
+2020-12-14 03:32:54.036733, se retiro la cantidad de -5 para la moneda XRP Enviada a la cuenta: 69
+2020-12-14 03:33:33.298820, se retiro la cantidad de 9 para la moneda XRP Enviada a la cuenta: 89
