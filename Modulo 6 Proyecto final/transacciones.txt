@@ -1,0 +1,6 @@
+2020-12-14 11:22:38.106100, se ingreso la cantidad de 72 para la moneda BTC
+2020-12-14 11:22:52.338539, se ingreso la cantidad de 52 para la moneda XRP
+2020-12-14 11:23:04.587854, se ingreso la cantidad de 14 para la moneda ADA
+2020-12-14 11:23:19.525515, se ingreso la cantidad de 87 para la moneda LTC
+2020-12-14 11:23:32.282833, se ingreso la cantidad de 5 para la moneda ETH
+2020-12-14 11:23:42.696390, se retiro la cantidad de 1 para la moneda ETH Enviada a la cuenta: 2
