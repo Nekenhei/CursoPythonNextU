@@ -3,6 +3,15 @@
 Repositorio que almacena los ejercicios vistos durante
 el certificado en desarrollo con **fundamentos de desarrolo en Python** de NextU
 
+## Temas trabajados
+
+Se trabajaron temas tales como:
+
+* Tipos de datos en Python
+* Instalación y configuración
+* Programacion Orientada a Objetos (POO)
+* Uso y consumo de APIs con Python
+* Procesamiento de archivos 
 
 ## Taller final: **Monedero virtual de Criptomonedas**
 
